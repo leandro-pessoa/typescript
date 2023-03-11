@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --typecor: #0385D2;
+}
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2em;
+}
+section.app{
+  display: grid;
+  grid-template-columns: 30% auto;
+  height: 100vh;
+  transition: ease .3s;
+  
+}
+div.content{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+div.img{
+  background: url('../componentes/imagens/pattern-recortado.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+main.app{
+  display: flex;
+  flex-flow: column wrap;
+}
+h1.app{
+  text-align: center;
+  font-size: 2.5em;
+  color: #0b3a58;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.13);
+}
+input{
+  outline: none;
+  border: none;
+  background-color: rgb(231, 231, 231);
+  border-radius: 5px;
+  font-size: 0.9em;
+  padding: 3px 5px;
+  width: 76%;
+  margin-left: 5px;
+}
+input:focus{
+  background-color: rgb(206, 206, 206);
+}
+button.app{
+  border: none;
+  font-size: 0.9em;
+  border-radius: 5px;
+  background-color: #0B3A58;
+  color: white;
+  padding: 4px 0px;
+  margin: 5px 0px;
+  width: 93%
+}
+button:hover{
+  background-color: #0f4d74;
+  cursor: pointer;
+  transition: .3s;
+}
+img.app{
+  width: 32px;
+  transform: translate(0px, 10px);
+}
+p.p-bottom{
+  font-size: 0.85em;
+  text-align: center;
+  margin-right: 25px;
+  color: rgb(88, 88, 88);
+  font-weight: bold;
+}
+p.p-bottom:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+@media screen and (min-width: 650px) and (max-width: 1150px) {
+  section.app{
+    grid-template-columns: 50% 50%;
+  }
+}
+@media screen and (max-width: 650px) {
+  section.app{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background: url('../componentes/imagens/pattern-recortado.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  div.content{
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 5px;
+    height: 300px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.205);
+  }
+  h1.app{
+    color: #0b3a58;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.11);
+    font-size: 2.3em;
+    margin-bottom: 10px;
+  }
+  input{
+    background-color: rgb(231, 231, 231);
+  }
+  button.app{
+    width: 93%;
+  }
+  p.p-bottom{
+    margin-right: 0px;
+  }
+}

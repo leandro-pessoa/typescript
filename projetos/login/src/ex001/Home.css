@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: rgb(245, 245, 245);
+    border-bottom: 1px solid rgb(175, 175, 175);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.137);
+    padding: 0px 15px;
+}
+header div.menuIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+}
+div.userEmail{
+    font-size: 0.9em;
+    color: #1A86C4;
+    text-shadow: .5px .4px 1.0px #0f5177;
+}
+header div.menuIcon:hover{
+    cursor: pointer;
+    background-color: rgb(226, 226, 226);
+    border-radius: 2px;
+    transition-duration: .3s;
+}
+div.imagemHome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../componentes/imagens/pattern.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 200px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.445);
+}
+div.imagemHome h1{
+    font-size: 1.8em;
+    color: rgb(235, 234, 234);
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.425);
+}
+div.divNav{
+    transition: ease .3s;
+    position: fixed;
+    height: 100vh;
+    background-color: white;
+}
+img.home{
+    width: 37px;
+    transform: translate(0px, 9px);
+}
+nav{
+    transition: .4s;
+    padding-left: 15px;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+}
+
+@media screen and (max-width: 650px) {
+    header{
+        font-size: 0.9em;
+    }
+    nav{
+        font-size: 0.9em;
+    }
+    div.imagemHome h1{
+        font-size: 1.5em;
+    }
+    div.imagemHome{
+        height: 150px;
+    }
+    img.home{
+        width: 30px;
+    }
+}
+@media screen and (max-width: 450px) {
+    div.imagemHome h1{
+        font-size: 1.1em;
+    }
+}
+

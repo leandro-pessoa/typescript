@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+main.cadastro{
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+div.imgCadastro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 6px;
+    background: url('../componentes/imagens/pattern-recortado.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100px;
+    box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.295);
+}
+div.dados{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    font-size: 0.9em;
+    background-color: rgb(240, 240, 240);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.164);
+    border: 1px solid rgb(194, 194, 194);
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+    padding: 15px;
+    border-top: 3px solid #164D6C;
+    gap: 10px;
+}
+h1.h1Cadastro{
+    color: rgb(240, 240, 240);
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.76);
+    font-size: 2.2em;
+}
+input.inputCadastro{
+    width: 200px;
+    border-left: 3px solid #0B2234;
+    border-radius: 3px;
+    margin-left: 0px;
+}
+button.buttonCadastrar{
+    background-color: #0B2234;
+    font-size: 0.9em;
+    color: rgb(240, 240, 240);
+    border: none;
+    padding: 4px 0px;
+    width: 213px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+button.buttonCadastrar:hover{
+    background-color: #113450;
+    transition: .3s;
+}
+span.voltar{
+    background-color: #164D6C;
+    color: rgb(240, 240, 240);
+    text-align: center;
+    border-radius: 5px;
+    font-size: 0.9em;
+    padding: 2px 86.5px;
+    padding-bottom: 3px;
+}
+span.voltar:hover{
+    background-color: #1b5e85;
+    transition: .3s;
+}
+div.imgBottom{
+    background: url('../componentes/imagens/pattern-recortado.jpg') no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+    color: rgb(240, 240, 240);
+    padding: 3px;
+    text-shadow: 0px 0px 10px black;
+    font-weight: bold;
+    box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.295);
+}
+@media screen and (max-width: 514px) {
+    h1.h1Cadastro{
+        font-size: 1.8em;
+    }
+    div.dados{
+        font-size: 0.8em;
+    }
+    input.inputCadastro{
+        width: 150px;
+    }
+    button.buttonCadastrar{
+        width: 163px;
+    }
+    span.voltar{
+        width: 163px;
+    }
+    div.imgBottom{
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width: 400px) {
+    input.inputCadastro{
+        width: 120px;
+    }
+    button.buttonCadastrar{
+        width: 133px;
+    }
+}
+
+
